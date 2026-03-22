@@ -1,0 +1,32 @@
+{
+  "Math": {
+    "Level 1": [
+      {
+        "question": "What is 2 + 2?",
+        "options": ["3", "4", "5", "6"],
+        "correct": 1
+      },
+      {
+        "question": "What is 3 x 3?",
+        "options": ["6", "9", "12", "15"],
+        "correct": 1
+      }
+    ],
+    "Level 2": [
+      {
+        "question": "What is 10 / 2?",
+        "options": ["2", "4", "5", "10"],
+        "correct": 2
+      }
+    ]
+  },
+  "Science": {
+    "Level 1": [
+      {
+        "question": "What planet is known as the Red Planet?",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "correct": 1
+      }
+    ]
+  }
+}

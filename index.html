@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Quiz Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home-screen" class="screen">
+        <h1>Quiz Mastermind</h1>
+        <div id="subject-grid" class="subject-container"></div>
+    </section>
+
+    <section id="level-screen" class="screen hidden">
+        <button class="back-btn">← Subjects</button>
+        <h2 id="selected-subject-name">Subject</h2>
+        <div id="level-grid" class="level-grid"></div>
+    </section>
+
+    <section id="game-screen" class="screen hidden">
+        <div class="game-header">
+            <div class="progress-container"><div id="progress-bar" class="progress-bar"></div></div>
+            <div id="score-display">Score: 0</div>
+        </div>
+        <div id="question-container">
+            <h3 id="question-text">Question loading...</h3>
+            <div id="options-grid" class="options-grid"></div>
+        </div>
+    </section>
+
+    <div id="modal-overlay" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Level Clear!</h2>
+            <p id="modal-score">Final Score: 0/20</p>
+            <div class="modal-actions">
+                <button id="retry-btn">Retry</button>
+                <button id="next-level-btn">Next Level</button>
+                <button id="home-btn">Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
