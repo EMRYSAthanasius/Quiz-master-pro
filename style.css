@@ -1,7 +1,29 @@
 :root {
-    --card-bg: #2c2c2e;
-    --bg-color: #1c1c1e;
+    --card-bg: #14141a;
+    --bg-color: #0F0F14;
     --text-color: #ffffff;
+    --text-muted: #8E8E93;
+    --border-color: #2c2c35;
+
+    --color-history: #af52de;
+    --color-philosophy: #0a84ff;
+    --color-maths: #32ade6;
+    --color-general: #ffcc00;
+    --color-geography: #34c759;
+    --color-chemistry: #ff9500;
+    --color-english: #ff2d55;
+    --color-literature: #bf5af2;
+    --color-biology: #30d158;
+    --color-physics: #5e5ce6;
+    --color-funfacts: #ffb340;
+    --color-movies: #ff3b30;
+    --color-sports: #a4e32d;
+    --color-music: #d568c4;
+    --color-technology: #0a84ff;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -17,21 +39,182 @@ body {
     margin: 0 auto;
 }
 
+/* Home Header */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-titles h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #e0e0e0;
+}
+
+.header-titles p {
+    margin: 5px 0 0;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.refresh-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+/* Stats Row */
+.stats-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4da6ff;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Overall Progress */
+.overall-progress-card {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.progress-title {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.progress-percent {
+    font-weight: bold;
+    color: #4da6ff;
+}
+
+.progress-track {
+    background: var(--border-color);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #4da6ff;
+    height: 100%;
+    border-radius: 4px;
+    width: 0%;
+}
+
+/* Subjects Section */
+.subjects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.subjects-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.subjects-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 .subject-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
 }
 
 .subject-tile {
     background: var(--card-bg);
-    padding: 30px 20px;
-    border-radius: 12px;
-    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 16px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    background: rgba(255,255,255,0.05);
+}
+
+.subject-icon-wrap svg {
+    width: 20px;
+    height: 20px;
+}
+
+.subject-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.subject-progress-text {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.subject-progress-track {
+    background: var(--border-color);
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.subject-progress-fill {
+    height: 100%;
+    border-radius: 2px;
+    width: 0%;
 }
 
 .back-btn {

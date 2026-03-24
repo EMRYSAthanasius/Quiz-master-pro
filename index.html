@@ -8,7 +8,46 @@
 </head>
 <body>
     <section id="home-screen" class="screen">
-        <h1>Quiz Mastermind</h1>
+        <header class="home-header">
+            <div class="header-titles">
+                <h1>Quiz Engine</h1>
+                <p>Master every subject</p>
+            </div>
+            <button class="refresh-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            </button>
+        </header>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-number" id="stat-levels-done">0</div>
+                <div class="stat-label">Levels Done</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="stat-subjects">0</div>
+                <div class="stat-label">Subjects</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="stat-total-levels">0</div>
+                <div class="stat-label">Total Levels</div>
+            </div>
+        </div>
+
+        <div class="overall-progress-card">
+            <div class="progress-header">
+                <span class="progress-title">Overall Progress</span>
+                <span class="progress-percent" id="overall-progress-text">0%</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="overall-progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="subjects-header">
+            <h2>Subjects</h2>
+            <span class="subjects-count" id="subjects-count-text">0 subjects</span>
+        </div>
+
         <div id="subject-grid" class="subject-container"></div>
     </section>
 
